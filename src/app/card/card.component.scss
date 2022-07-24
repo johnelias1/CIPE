@@ -1,0 +1,17 @@
+.tarjeta-contenedor{
+    margin-bottom: 20px;
+    .contenedor-div{
+        .contendedor-div-content{
+            .tarjeta-contenido{
+                padding: 15px 0px 15px 0px;
+                width: calc(100% - 30px);
+            }
+
+            .contenido-titulo{
+                h2{
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}

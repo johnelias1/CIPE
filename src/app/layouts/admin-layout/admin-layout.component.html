@@ -3,9 +3,11 @@
         <app-sidebar></app-sidebar>
         <div class="sidebar-background" style="background-image: url(./assets/img/sidebar-4.jpg)"></div>
     </div>
-    <div class="main-panel" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10">
-        <div><app-navbar></app-navbar></div>
-        <div fxFill>
+    <div class="main-panel" fxLayout="column" fxLayoutAlign="center center" style="background-color: #ff806c33;">
+        <div>
+            <app-navbar></app-navbar>
+        </div>
+        <div>
             <router-outlet class="contenedor"></router-outlet>
         </div>
         <div>

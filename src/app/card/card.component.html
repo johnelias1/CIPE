@@ -1,0 +1,13 @@
+<div fxLayoutAlign="center center" class="tarjeta-contenedor" fxFlex="100" fxLayout="row">
+    <mat-card class="contenedor-div" fxLayoutAlign="center center" fxFlex="100" fxLayot="row">
+        <mat-card-content fxLayoutAlign="center center" class="contenedor-div-content" fxLayout="column" fxFlex="100">
+            <div *ngIf="nombre" fxFill fxLayout="column" class="contenedor-titulo">
+                <h2>{{nombre}}</h2>
+                <mat-divider [inset]="true"></mat-divider>
+            </div>  
+            <div class="tarjeta-contenido" fxFlex.xs="100">
+                <ng-content select=".card-content"> </ng-content>
+            </div>          
+        </mat-card-content>
+    </mat-card>
+</div>

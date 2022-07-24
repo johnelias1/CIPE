@@ -8,9 +8,16 @@ import { ComponentsModule } from './components/components.module';
 import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import {MatCardModule} from '@angular/material/card';
+import {MatDividerModule} from '@angular/material/divider';
+import { CardComponent } from './card/card.component';
+import { CommonModule } from '@angular/common';
+
+
 
 @NgModule({
   imports: [
+    CommonModule,
     BrowserAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
@@ -18,13 +25,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ComponentsModule,
     RouterModule,
     AppRoutingModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatCardModule,
+    MatDividerModule,
   ],
   declarations: [
     AppComponent,
     AdminLayoutComponent,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
 export class AppModule { }

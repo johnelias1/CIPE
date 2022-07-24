@@ -1,8 +1,8 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
-    "baseUrl": "src",
     "sourceMap": true,
     "declaration": false,
     "module": "es2020",
@@ -17,5 +17,11 @@
       "es2017",
       "dom"
     ]
+  },
+  "angularCompilerOptions": {
+    "enableI18nLegacyMessageIdFormat": false,
+    "strictInjectionParameters": true,
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
   }
 }
